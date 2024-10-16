@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+<button onclick="document.getElementById('myImage').src='astana.jpg'">Astana</button>
+
+<img id="myImage" src="./astana.jpg" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='almaty.jpg'">Almaty</button>
+
+
+
+<p id="demo"> nigga </p>
+
+
+<button onclick="document.getElementById('demo').style.fontWeight='bold'">click me</button>
+
+
+<p id = "nigga">11.10.2024</p>
+<button type="button" onclick= "document.getElementById('nigga').style.display='none'" >click</button>
+<button type ="button" onclick="document.getElementById('nigga').style.display='block'">pokazhi</button>
+
+<h2>7th exercise</h2>
+<p id = "Kami"></p>
+
+
+<h2>8th exercise</h2>
+<p id = "nkei">Current date</p>
+<script>
+    const d = new Date();
+    document.getElementById("nkei").innerText = new Date().toLocaleString("en-US",{
+            timeZoneName: "short" 
+        });
+</script>
+
+
+<h2>9th exercise</h2>
+<p id = "nigger"></p>
+
+
+<h2>10th exercise</h2>
+<p>First number:</p><input type="text" id="f"><br>
+<p>Second number:</p><input type="text" id="s">
+<p id="result"></p>
+<button type="button" onclick="Multiply()">Multiply</button>
+<button type="button" onclick="Divide()">Divide</button>
+<script>
+ function Multiply() {
+        var num1 = document.getElementById("f").value;
+        var num2 = document.getElementById("s").value;
+        document.getElementById('result').innerHTML = num1 * num2;
+     }
+ function Divide() {
+        var num1 = document.getElementById("f").value;
+        var num2 = document.getElementById("s").value;
+        document.getElementById('result').innerHTML = num1 / num2;
+}
+     </script>
+
+<h2>11th exercise</h2>
+<p id = "cpepsi"></p>
+<p id = "fpepsi"></p>
+
+<h2>12th exercise</h2>
+<p id = "resss"></p> 
+
+<h2>13th exercise</h2>
+<p id = "lol"></p>
+
+<h2>14th exercise</h2>
+<p id = "lolz"></p>
+
+<h2>15th exercise</h2>
+<input type="text" id = "i1"/>
+<button onclick="fun()">Button</button>
+<h3>Answer:</h3>
+<h3 id = "output">...</h3>
+
+
+<h2>16th exercise</h2>
+<input type="text" id = "i2" />
+<button onclick = "funccc()">Button</button>
+<h3>Vovels:</h3>
+<h3 id = "vovs_out">...</h3>
+<h3>Consonunts</h3>
+<h3 id = "cons_out">...</h3>
+
+<h2>17th exercise</h2>
+<input type="text" id = "i3" />
+<button onclick="convertSeconds()">convert</button>
+<h3>Minutes:</h3>
+<h3 id = "m_out">...</h3>
+<h3>Hours:</h3>
+<h3 id = "h_out">...</h3>
+
+<h2>19th exercise</h2>
+<input type="text" id = "i4"/>
+<button onclick="fibonacci()">click</button>
+<h3>Fibonacci Series:</h3>
+<h3 id = "f_out">...</h3>
+
+
+<script src="index.html"></script>  
+<script src="./index.js"></script>
+</body>
+</html>
